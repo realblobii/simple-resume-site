@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html><body>
-    <h1>you may ask, do i have skibidi, yes i do</h1>
-    <p>what is your skibidi leveL? pls tell..</p>
-    <input type="text">
-    <button>send it to the skib labs</button>
-    <a href="https://realblobii.github.io/simple-resume-site/index.html">back to sigma</a>
-</body></html>
+<html>
+<head>
+    <title>Skibidi Level Check</title>
+</head>
+<body>
+    <h1>you may ask, do I have skibidi, yes I do</h1>
+    <p>What is your skibidi level? Please tell..</p>
+    <input type="text" id="skibInput" placeholder="Enter your skibidi level">
+    <button onclick="sendSkibLevel()">Send it to the skib labs</button>
+    <p id="result"></p>
+    <a href="https://realblobii.github.io/simple-resume-site/index.html">Back to sigma</a>
+
+    <script>
+        function sendSkibLevel() {
+            // Get the value from the input field
+            var skibLevel = document.getElementById('skibInput').value;
+
+            // Create the message
+            var message = 'Pretty sigma, your skib is ' + skibLevel;
+
+            // Display the message in the result paragraph
+            document.getElementById('result').innerText = message;
+        }
+    </script>
+</body>
+</html>
